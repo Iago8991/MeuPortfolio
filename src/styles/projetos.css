@@ -1,0 +1,123 @@
+/* Estilização da seção de Projetos */
+#secaoProjetos {
+  width: 80%;
+  margin: 80px auto 100px;
+  padding: 20px;
+}
+
+/* Título da seção */
+#secaoProjetos h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+/* Container dos projetos com animação de entrada */
+.projetos {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 8px rgba(0,0,0,0.3);
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+#secaoProjetos.visivel .projetos {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* Imagem do projeto */
+.imagemProjeto {
+  flex: 1;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.imagemProjeto img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 4px 4px 8px rgba(0,0,0,0.3);
+}
+
+/* Detalhes do projeto */
+.detalhesProjeto {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--secondary-color);
+  padding: 20px;
+  gap: 1rem;
+}
+
+.detalhesSuperior h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.detalhesSuperior p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+/* Habilidades do projeto */
+.habilidadesProjeto {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.habilidadesProjeto i {
+  font-size: 2.5em;
+  color: black;
+  padding: 8px 12px;
+}
+
+/* Links do projeto */
+.linkProjeto a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-size: 1.2em;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-right: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 4px 4px 8px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.linkProjeto a:hover {
+  transform: scale(1.1);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  #secaoProjetos h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  .projetos {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .imagemProjeto, .detalhesProjeto {
+    width: 100%;
+  }
+  .detalhesProjeto {
+    text-align: center;
+  }
+}

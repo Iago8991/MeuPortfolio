@@ -1,0 +1,134 @@
+#Cabecalho {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 80px;
+    border-bottom: 2.5px solid rgb(0, 0, 0);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+  
+#Cabecalho h1 {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    color: var(--secondary-color);
+}
+
+/* Menu tradicional (links do header) */
+#Cabecalho ul {
+    list-style: none;
+    display: flex;
+    gap: 0;
+    align-items: center;
+    font-family: var(--font-heading);
+    white-space: nowrap;
+}
+
+#Cabecalho ul li {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    padding: 15px 0;
+}
+
+#Cabecalho ul li::after {
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#Cabecalho ul li:hover::after {
+    background-color: var(--primary-color);
+}
+
+#Cabecalho ul li a {
+    display: block;
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+    padding: 10px 20px;
+}
+
+#Cabecalho ul li a:hover {
+    color: var(--primary-color);
+}
+
+/* Menu hambúrguer */
+.menu-hamburguer {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 101;
+}
+
+.menu-hamburguer div {
+    width: 30px;
+    height: 4px;
+    background-color: var(--secondary-color);
+    margin: 5px;
+    transition: 0.3s;
+}
+
+/* Menu lateral (aparece em telas pequenas) */
+.menu-lateral {
+    position: fixed;
+    top: 60px; /* Aparece abaixo do cabeçalho */
+    left: 0;
+    width: 100vw;
+    background-color: var(--bg-color);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 101;
+}
+
+.menu-lateral.aberto {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu-lateral ul {
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    text-align: center;
+    white-space: normal;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-lateral ul li {
+    display: block;
+    padding: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.menu-lateral ul li:last-child {
+    border-bottom: none;
+}
+
+.menu-lateral ul li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: block;
+}
+
+/* Em telas maiores, exibe o menu tradicional e oculta o menu lateral */
+@media (min-width: 769px) {
+    .menu-lateral {
+        display: none;
+    }
+}

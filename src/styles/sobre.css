@@ -1,0 +1,48 @@
+#secaoSobreMim {
+  width: 80%;
+  margin: 80px auto;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  padding: 40px;
+  background-color: var(--bg-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+#secaoSobreMim.visivel {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+#secaoSobreMim .imagem {
+  flex: 1;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#secaoSobreMim .imagem img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+#secaoSobreMim .conteudo {
+  flex: 2;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--secondary-color);
+}
+
+@media (max-width: 900px) {
+  #secaoSobreMim {
+    flex-direction: column;
+    gap: 20px;
+  }
+  #secaoSobreMim .conteudo {
+    text-align: center;
+  }
+}

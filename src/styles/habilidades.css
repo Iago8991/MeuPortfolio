@@ -1,0 +1,73 @@
+#sectionHabilidades {
+  width: 80%;
+  padding: 40px;
+  margin: 0 auto;
+  background-color: white;
+  text-align: center;
+  max-width: 1200px;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+#sectionHabilidades.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.titulo-habilidades {
+  font-size: 3em;
+  margin-bottom: 40px;
+  color: black;
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+#sectionHabilidades.visible .titulo-habilidades {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.containerHabilidades {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.habilidade {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.habilidade.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.habilidade i {
+  font-size: 4em;
+  color: black;
+}
+
+.iconeC {
+  width: 4em;
+  transition: transform 0.5s ease;
+}
+
+@media (max-width: 768px) {
+  #sectionHabilidades h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  .containerHabilidades {
+    gap: 20px;
+  }
+}
