@@ -35,9 +35,9 @@ function Cabecalho() {
       ) : (
         <ul>
           <li><a href="#sectionPaginaPrincipal">Início</a></li>
-          <li><a href="#sectionSobreMim">Sobre mim</a></li>
+          <li><a href="#secaoSobreMim">Sobre mim</a></li>
           <li><a href="#sectionHabilidades">Habilidades</a></li>
-          <li><a href="#sectionProjetos">Projetos</a></li>
+          <li><a href="#secaoProjetos">Projetos</a></li>
           <li><a href="#sectionContato">Contato</a></li>
         </ul>
       )}
@@ -45,9 +45,9 @@ function Cabecalho() {
       <nav className={`menu-lateral ${menuAberto ? 'aberto' : ''}`}>
         <ul>
           <li><a href="#sectionPaginaPrincipal" onClick={() => setMenuAberto(false)}>Início</a></li>
-          <li><a href="#sectionSobreMim" onClick={() => setMenuAberto(false)}>Sobre mim</a></li>
+          <li><a href="#secaoSobreMim" onClick={() => setMenuAberto(false)}>Sobre mim</a></li>
           <li><a href="#sectionHabilidades" onClick={() => setMenuAberto(false)}>Habilidades</a></li>
-          <li><a href="#sectionProjetos" onClick={() => setMenuAberto(false)}>Projetos</a></li>
+          <li><a href="#secaoProjetos" onClick={() => setMenuAberto(false)}>Projetos</a></li>
           <li><a href="#sectionContato" onClick={() => setMenuAberto(false)}>Contato</a></li>
         </ul>
       </nav>
