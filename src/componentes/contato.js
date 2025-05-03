@@ -49,7 +49,7 @@ function Contato() {
                 </a>
 
                 {/* Currículo */}
-                <a href="caminho/para/curriculo.pdf"
+                <a href="https://docs.google.com/document/d/1KDiCn54vz3s0uSB9x1gkcPHX9u3NyWwRckiYNjZa12Q/edit?usp=sharing"
                    target="_blank"
                    rel="noreferrer"
                    className="contatoItem"
