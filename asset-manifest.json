@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/MeuPortfolio/static/css/main.a350b6b0.chunk.css",
-    "main.js": "/MeuPortfolio/static/js/main.62f89beb.chunk.js",
-    "main.js.map": "/MeuPortfolio/static/js/main.62f89beb.chunk.js.map",
+    "main.css": "/MeuPortfolio/static/css/main.c4c8743e.chunk.css",
+    "main.js": "/MeuPortfolio/static/js/main.7a092db0.chunk.js",
+    "main.js.map": "/MeuPortfolio/static/js/main.7a092db0.chunk.js.map",
     "runtime-main.js": "/MeuPortfolio/static/js/runtime-main.67f602fb.js",
     "runtime-main.js.map": "/MeuPortfolio/static/js/runtime-main.67f602fb.js.map",
     "static/css/2.6ea8ac1c.chunk.css": "/MeuPortfolio/static/css/2.6ea8ac1c.chunk.css",
     "static/js/2.1f3b75d6.chunk.js": "/MeuPortfolio/static/js/2.1f3b75d6.chunk.js",
     "static/js/2.1f3b75d6.chunk.js.map": "/MeuPortfolio/static/js/2.1f3b75d6.chunk.js.map",
     "index.html": "/MeuPortfolio/index.html",
-    "precache-manifest.c5d5e64ca942c8148802ed282a1babe5.js": "/MeuPortfolio/precache-manifest.c5d5e64ca942c8148802ed282a1babe5.js",
+    "precache-manifest.6be17e3600b2abc4f393ec47ca0c2c42.js": "/MeuPortfolio/precache-manifest.6be17e3600b2abc4f393ec47ca0c2c42.js",
     "service-worker.js": "/MeuPortfolio/service-worker.js",
     "static/css/2.6ea8ac1c.chunk.css.map": "/MeuPortfolio/static/css/2.6ea8ac1c.chunk.css.map",
-    "static/css/main.a350b6b0.chunk.css.map": "/MeuPortfolio/static/css/main.a350b6b0.chunk.css.map",
+    "static/css/main.c4c8743e.chunk.css.map": "/MeuPortfolio/static/css/main.c4c8743e.chunk.css.map",
     "static/js/2.1f3b75d6.chunk.js.LICENSE.txt": "/MeuPortfolio/static/js/2.1f3b75d6.chunk.js.LICENSE.txt",
     "static/media/c-logo.jpg": "/MeuPortfolio/static/media/c-logo.78e53f52.jpg",
     "static/media/all.min.css": "/MeuPortfolio/static/media/fa-v4compatibility.a772da7b.woff2",
     "static/media/ilustracao.png": "/MeuPortfolio/static/media/ilustracao.ffdc1b6b.png",
-    "static/media/site.png": "/MeuPortfolio/static/media/site.d210d7da.png"
+    "static/media/site.png": "/MeuPortfolio/static/media/site.4e6c02b5.png"
   },
   "entrypoints": [
     "static/js/runtime-main.67f602fb.js",
     "static/css/2.6ea8ac1c.chunk.css",
     "static/js/2.1f3b75d6.chunk.js",
-    "static/css/main.a350b6b0.chunk.css",
-    "static/js/main.62f89beb.chunk.js"
+    "static/css/main.c4c8743e.chunk.css",
+    "static/js/main.7a092db0.chunk.js"
   ]
 }
