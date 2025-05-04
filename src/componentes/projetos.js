@@ -6,7 +6,6 @@ import gsap from 'gsap';
 function Projetos() {
   const secaoProjetosRef = useRef(null);
 
-  // Observador para ativar a animação de entrada
   useEffect(() => {
     const observador = new IntersectionObserver(
       ([entrada]) => {
@@ -23,7 +22,6 @@ function Projetos() {
     return () => observador.disconnect();
   }, []);
 
-  // Anima redimensionamento com GSAP
   useEffect(() => {
     const animarRedimensionamento = () => {
       gsap.to(secaoProjetosRef.current, {
@@ -49,18 +47,27 @@ function Projetos() {
             <div className="detalhesSuperior">
               <h3>Site de Vendas de Supermercado</h3>
               <p>
-                Projeto de site de vendas de supermercado, com foco em funções de banco de dados, permitindo a inserção de produtos e variáveis e o gerenciamento dos mesmos, exigindo registro para uso, senhas protegidas por hash e funções especiais de admin. (ainda em desenvolvimento)
+              Aplicação web de vendas de supermercado desenvolvida em PHP,
+              MySQL e JavaScript, com interface responsiva e hospedagem online. 
+              Usuários podem se cadastrar, adicionar produtos ao carrinho e acompanhar
+              seus pedidos, enquanto administradores dispõem de um painel para inserir,
+              editar e gerenciar itens — definindo descontos e categorias.
+              O site exibe destaques aleatórios com preço original riscado
+              e valor promocional, atraindo a atenção do cliente.
+              Todo o sistema utiliza um banco de dados seguro e variáveis de ambiente,
+              garantindo fácil manutenção e portabilidade.
               </p>
               <div className="habilidadesProjeto">
                 <i className="fab fa-php"></i>
                 <i className="fab fa-css3-alt"></i>
                 <i className="fas fa-database"></i>
                 <i className="fab fa-html5"></i>
+                <i className="fab fa-js"></i>
               </div>
             </div>
             <div className="detalhesInferior">
               <div className="linkProjeto">
-                <a href="alguma maneira de demonstrar o projeto" target="_blank" rel="noreferrer">
+                <a href="http://iagorighetti.infinityfreeapp.com/" target="_blank" rel="noreferrer">
                   Visualizar
                 </a>
                 <a href="https://github.com/Iago8991/site_vendas_supermercado" className="linkGithub" target="_blank" rel="noreferrer">

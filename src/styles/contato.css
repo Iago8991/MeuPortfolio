@@ -1,4 +1,3 @@
-/* Seção principal */ 
 #sectionContato {
     width: 80%;
     padding: 40px;
@@ -9,23 +8,20 @@
     margin-bottom: 100px;
 }
 
-/* Título */
 #sectionContato h2 {
     font-size: 2.7em;
     margin-bottom: 40px;
-    color: black; /* Cor preta */
+    color: black; 
 }
 
-/* Container para alinhar os itens lado a lado */
 .contatoContainer {
     display: flex;
-    justify-content: space-around; /* Distribui igualmente */
+    justify-content: space-around; 
     align-items: center;
-    flex-wrap: wrap; /* Permite que itens se ajustem */
+    flex-wrap: wrap; 
     gap: 20px;
 }
 
-/* Estilização de cada item de contato */
 .contatoItem {
     display: flex;
     align-items: center;
@@ -33,24 +29,21 @@
     padding: 15px;
     transition: transform 0.3s ease;
     text-decoration: none;
-    user-select: none; /* Evita seleção do texto */
+    user-select: none; 
 }
 
-/* Ícones maiores */
 .contatoItem i {
     font-size: 2.5em;
     color: black;
     transition: transform 0.3s ease;
 }
 
-/* Estilo dos textos */
 .contatoTexto h3, .contatoTexto p {
-    color: black; /* Mantém os textos pretos */
+    color: black; 
     margin: 0;
     text-align: left;
 }
 
-/* Efeito de aumento ao passar o mouse */
 .contatoItem:hover {
     transform: scale(1.1);
 }
@@ -59,7 +52,6 @@
     transform: scale(1.2);
 }
 
-/* Remove borda azul ao clicar */
 .contatoItem:focus,
 .contatoItem a:focus,
 .contatoItem:active,

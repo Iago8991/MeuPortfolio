@@ -1,11 +1,9 @@
-/* Estilização da seção de Projetos */
 #secaoProjetos {
   width: 80%;
   margin: 80px auto 100px;
   padding: 20px;
 }
 
-/* Título da seção */
 #secaoProjetos h2 {
   font-size: 2.5em;
   margin-bottom: 40px;
@@ -13,7 +11,6 @@
   text-align: center;
 }
 
-/* Container dos projetos com animação de entrada */
 .projetos {
   display: flex;
   gap: 20px;
@@ -32,7 +29,6 @@
   opacity: 1;
 }
 
-/* Imagem do projeto */
 .imagemProjeto {
   flex: 1;
   border-radius: 10px;
@@ -41,13 +37,12 @@
 
 .imagemProjeto img {
   width: 100%;
-  height: 250px;
+  height: 400px;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 4px 4px 8px rgba(0,0,0,0.3);
 }
 
-/* Detalhes do projeto */
 .detalhesProjeto {
   flex: 2;
   display: flex;
@@ -71,7 +66,6 @@
   line-height: 1.6;
 }
 
-/* Habilidades do projeto */
 .habilidadesProjeto {
   display: flex;
   gap: 10px;
@@ -84,7 +78,6 @@
   padding: 8px 12px;
 }
 
-/* Links do projeto */
 .linkProjeto a {
   text-decoration: none;
   color: var(--secondary-color);
@@ -104,7 +97,6 @@
   transform: scale(1.1);
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
   #secaoProjetos h2 {
     font-size: 2.5em;

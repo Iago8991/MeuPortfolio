@@ -2,9 +2,7 @@ import React, { useState, useEffect } from 'react';
 import '../styles/cabecalho.css';
 
 function Cabecalho() {
-  // Estado para controlar se o menu está aberto
   const [menuAberto, setMenuAberto] = useState(false);
-  // Estado que indica se a tela é pequena (<= 768px)
   const [telaPequena, setTelaPequena] = useState(window.matchMedia("(max-width: 768px)").matches);
 
   useEffect(() => {

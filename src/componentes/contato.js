@@ -19,8 +19,6 @@ function Contato() {
         <section id="sectionContato">
             <h2>Contatos</h2>
             <div className="contatoContainer">
-
-                {/* Telefone - Link para WhatsApp */}
                 <a href="https://wa.me/5511913734356"
                    target="_blank"
                    rel="noreferrer"
@@ -35,7 +33,6 @@ function Contato() {
                     </div>
                 </a>
 
-                {/* E-mail */}
                 <a href="mailto:iagoadsprogramer@gmail.com"
                    className="contatoItem"
                    ref={(el) => contatoRef.current[1] = el}
@@ -48,8 +45,7 @@ function Contato() {
                     </div>
                 </a>
 
-                {/* Currículo */}
-                <a href="https://docs.google.com/document/d/1KDiCn54vz3s0uSB9x1gkcPHX9u3NyWwRckiYNjZa12Q/edit?usp=sharing"
+                <a href="https://docs.google.com/document/d/1DXsTEdzYx4XUuI2zhuAZJglKrsrf155ZCE39MKa6h3c/edit?usp=sharing"
                    target="_blank"
                    rel="noreferrer"
                    className="contatoItem"

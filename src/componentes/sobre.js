@@ -4,11 +4,10 @@ import Ilustracao from '../imagens/ilustracao.png';
 import gsap from 'gsap';
 
 function Sobre() {
-  const secaoRef = useRef(null);   // Referência para a seção
-  const conteudoRef = useRef(null);   // Referência para o conteúdo
+  const secaoRef = useRef(null);
+  const conteudoRef = useRef(null);   
 
   useEffect(() => {
-    // Efeito de animação de entrada
     const observador = new IntersectionObserver(
       ([entrada]) => {
         if (entrada.isIntersecting) {
@@ -27,7 +26,6 @@ function Sobre() {
   }, []);
 
   useEffect(() => {
-    // Ajuste do tamanho da fonte com GSAP
     const ajustarFonte = () => {
       gsap.to(conteudoRef.current, { 
         fontSize: window.innerWidth < 900 ? "1rem" : "1.2rem", 
@@ -37,7 +35,7 @@ function Sobre() {
     };
 
     window.addEventListener("resize", ajustarFonte);
-    ajustarFonte(); // Define o tamanho inicial
+    ajustarFonte(); 
 
     return () => window.removeEventListener("resize", ajustarFonte);
   }, []);
@@ -50,8 +48,7 @@ function Sobre() {
       <div className="conteudo" ref={conteudoRef}>
         <h2>Sobre Mim</h2>
         <p>
-          Atualmente, estou no 3º semestre de Análise e Desenvolvimento de Sistemas
-          na Faculdade Unicid. Gosto muito de programação e estou sempre buscando 
+          Estudante de Análise e desenvolvimento de sistemas na Faculdade Unicid. Gosto muito de programação e estou sempre buscando 
           aprender mais para me qualificar para o mercado. Não possuo experiência 
           profissional ainda, mas estou constantemente construindo projetos práticos 
           para demonstrar minhas habilidades e minha paixão pela programação. Possuo 
