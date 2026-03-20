@@ -67,7 +67,7 @@ function Projetos() {
             </div>
             <div className="detalhesInferior">
               <div className="linkProjeto">
-                <a href="http://iagorighetti.infinityfreeapp.com/" target="_blank" rel="noreferrer">
+                <a href="https://mercadinhoirr.infinityfree.me/?i=1" target="_blank" rel="noreferrer">
                   Visualizar
                 </a>
                 <a href="https://github.com/Iago8991/site_vendas_supermercado" className="linkGithub" target="_blank" rel="noreferrer">
